@@ -1,33 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Kalev Nakah</title>
-    <meta name="description" content="Portfolio landing page for Caleb Schmidt. 
-    IF impressed OR moved THEN make me an offer I can't refuse! 
-    ELSEIF NOT impressed THEN let me know why ELSE move on END">
+    <meta name="description"
+        content="Free Code Camp Responsive Web Design Projects - Build a Personal Portfolio Webpage by Caleb Schmidt.">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-  </head>
-  <header></header>
-  <body>
-    <main>
-      <h1>KalevNakah - Name Meaning</h1>
-      <br>
-      <p>Caleb Schmidt</p>
-        <p>         English: Faithful | Blacksmith</p>
-        <p>(That's fine, but I think we can do better)</p>
-        <p>  Biblical Hebrew: kal-lev | Nakah</p>
-        <p>             whole | heart | smite</p>
-        <p>wholeheartedly | after God | killing</p>
-        <p>wholeheartedly | killed everyday | to live for Jesus Christ.</p>
-        <p>KalevNakah.me = Whole Heartedly dying to my self everyday to live for Jesus Christ.</p>
-        <p>(AH! that's better)</p>
-      <br>
-    </main>
-    <nav></nav>
-    <footer>
-      Copyright <time datetime="2020-05-18">2020</time>
-    </footer>
-  </body>
+</head>
+<body>
+    <navbar id="navbar">
+        <img id="logo" src="labrathorv3.png" alt="Logo - Labrathor">
+        <ul class="nav-list">
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#welcome">About</a></li>
+        </ul>
+    </navbar>
+    <section id="welcome-section">
+        <a id="welcome" class="anchor"></a>
+        <h1>Oi, I am Caleb</h1>
+        <p>a software engineer</p>
+        </br>
+        <pre id="welcome-name">
+                                Kalev Nakah = Caleb Schmidt
+
+                            Caleb                        | Schmidt
+                 English = faithful                      | blacksmith
+           Biblical Hebrew = נכה |                          כלב
+                           Kal-lev                       | Nakah
+                          all |          heart           | smite
+                to make whole |     heart after God      | to cripple/kill
+               whole heartily | to live for Jesus Christ | killed everyday
+
+    KalevNakah.me = Whole heartily dying to my self everyday to live for Jesus Christ.
+        </pre>
+        </section>
+    <section id="projects-section">
+        <a id="projects" class="anchor"></a>
+        <h2 id="projects-title">Here is a taste of some of my handy work.</h2></br>
+        <div class="projects-grid">
+            <div class="project-tile">
+                <a href="http://kalevnakah.me/FCC-Projects/TechnicalDocumentation/" target="_blank">
+                    <img class="project-img" src="TechnicalDocumentation.PNG" alt="Technical Documentation preview image.">
+                <p>Technical Document</p></a>
+            </div>
+            <div class="project-tile">
+                <a href="http://kalevnakah.me/FCC-Projects/ProductLanding/" target="_blank">
+                    <img class="project-img" src="ProductPage.PNG" alt="Product Landing preview image.">
+                <p>Product Landing</p></a>
+            </div>
+            <div class="project-tile">
+                <a href="http://kalevnakah.me/FCC-Projects/SurveyForm/" target="_blank">
+                    <img class="project-img" src="SurveyForm.PNG" alt="Survey Form preview image.">
+                <p>Survey Form</p></a>
+            </div>
+            <div class="project-tile">
+                <a href="http://kalevnakah.me/FCC-Projects/TechnicalDocumentation/" target="_blank">
+                    <img class="project-img" src="Tribute.PNG" alt="Tribute preview image.">
+                <p>Tribute</p></a>
+            </div>
+            <div class="project-tile">
+                <a href="http://kalevnakah.me/FCC-Projects/Portfolio/" target="_blank">
+                    <img class="project-img" src="Portfolio.PNG" alt="Portfolio preview image.">
+                <p>Portfolio</p></a>
+            </div>
+            <div class="project-tile"> 
+                <a href="http://Loft180.com" target="_blank">
+                    <img class="project-img" src="Loft180.PNG" alt="Word Press preview image.">
+                    <p>Word Press</p></a>
+            </div>
+            <div class="project-tile">
+                <a href="http://campgracemn.org" target="_blank">
+                    <img class="project-img" src="CampGrace.PNG" alt="Drupal preview image.">
+                <p>Drupal</p></a>
+            </div>
+        </div>
+    </section>
+    <section id="profile-section">
+        <a id=profile class="anchor"></a>
+        <div id="profile-title">
+            <h2>I may seem a bit sketchy...</h2>
+            <p>but give me a moment of your time and you will discover the color in me.</p>
+            <q>[sketch] 1: a simply or hastily executed drawing or painting, especially a preliminary one, 
+                giving the essential features without the details. ~ Dictionary.com</q>
+        </div>
+        <div id="profile-links">
+            <a class="profile-btn" 
+            href="https://github.com/kalevnakah" 
+            target="_blank">Git Hub</a>
+            <a id="profile-link" class="profile-btn" 
+            href="https://www.freecodecamp.org/kalevnakah" 
+            target="_blank">freeCodeCamp</a>
+            <a id="profile-link" class="profile-btn" 
+            href="https://www.linkedin.com/in/caleb-schmidt-04a0678b/" 
+            target="_blank">Linkedin</a>
+            <a id="profile-link" class="profile-btn" 
+            href="https://twitter.com/kalevnakah" 
+            target="_blank">Twitter</a>
+            <a id="profile-link" class="profile-btn" 
+            href="mailto:calebschmidt@gmail.com?" 
+            >eMail</a>
+        </div>
+    </section>
+</body>
 </html>

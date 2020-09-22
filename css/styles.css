@@ -1,3 +1,265 @@
-h1, p {
+/* box-sizing and font sizing */
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+* {
+    margin: 0;
+    padding: 0;
+}   
+html {
+    box-sizing: border-box;
+    /* Set font size for easy rem calculations
+    * default document font size = 16px, 1rem = 16px, 100% = 16px
+    * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+    */
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    }
+/* Base styles */
+body {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.8rem; /* 18px */
+    font-weight: 350;
+    line-height: 1.4;
+    color: var(--main-white);
+    scroll-behavior: smooth;
+    background-color: black;
+}
+/* Custom properties/variables  */
+:root {
+    --green: rgb(81, 255, 0);
+    --dark-green: #49e700d2;
+    --blue: #1100ff;
+    --blue-grey: #130b82;
+    --grey: #3F3F40;
+    --dark-grey: #141414;
+}
+h1 {
+    font-size: 8rem;
+    font-weight: normal;
+    padding: 2rem;
+    color: whitesmoke;
     font-family: 'Righteous', sans-serif;
+}
+h2 {
+    font-size: 4rem;
+    font-weight: normal;
+    padding: 4rem;
+    font-family: 'Sriracha', cursive;
+    color: var(--dark-green);
+}
+p {
+    font-size: 2rem;
+    font-family: 'Righteous', sans-serif;
+}
+q {
+    display:inline-block;
+    font-family: 'Playfair Display', serif;
+    text-indent: -10rem;
+    text-align: left;
+    padding: 1rem 10rem 1rem 20rem;
+}
+a {
+    text-decoration: none;
+    color: var(--green);
+}
+a:hover {
+    background-color: var(--blue);
+    color:var(--dark-green)
+}
+a.anchor {
+    display: block;
+    position: relative;
+    top: -10rem;
+    visibility: hidden;
+}  
+section {
+    display: block;
+}
+#navbar {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    top: 0;
+    width: 100%;
+    background-color: var(--dark-grey);
+    box-shadow: 0 6px 6px 0px var(--dark-green);
+    z-index: 9;
+}
+#logo {
+    display: flex;
+    position: relative;
+    height: 150px;
+    min-height: 30px;
+    max-height: 150px;
+    margin: auto 1.5rem auto 1.5rem;
+}
+.nav-list {
+    display: flex;
+    flex-flow: row-reverse wrap-reverse;
+    list-style: none;
+    justify-content: right;
+}
+.nav-list a {
+    display: inline-block;
+    font-size: 2.4rem;
+    margin: 0 1rem;
+    padding: 1rem 1rem;
+}  
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--dark-grey);
+    background-image: linear-gradient(90deg, var(--blue) 33%, var(--dark-grey) 66%);
+    font-family: 'Sriracha', cursive;
+    text-align: center;
+}
+#welcome-section p {
+    color: white;
+    font-size: 4rem;
+    font-weight: normal;
+    text-decoration: underline wavy var(--dark-green);
+}
+#welcome-name {
+    color:white;
+    text-align: start;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.8vw;
+}
+#projects-section {
+    background-color: var(--grey);
+    text-align: center;
+    padding: 1em;
+}
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(393.75px, 1fr));
+    grid-gap: 2rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    justify-items: center;
+}
+.project-tile {
+    width: 300px;
+    margin: 1em;
+    background-color: var(--dark-grey);
+    box-shadow: 10px 10px 0 0 var(--dark-green);
+}
+.project-tile:hover {
+    background-color: var(--blue);
+    transition: background .5s ease-out;
+}
+#profile-section {
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    text-justify: middle;
+    text-align: center;
+    padding: 1.5rem;
+}
+.project-tile p {
+    padding: 2rem;
+    font-family: 'Press Start 2P', cursive;
+}
+.project-img {
+    display:block;
+    width: 300px;
+}
+#profile-title {
+    font-family: 'Sriracha', cursive;
+    width: 100%;
+    padding-bottom: 2rem;
+    color: whitesmoke;
+}
+#profile-title h2{
+    color: whitesmoke;
+}
+#profile-links {
+    padding: 0 1rem 3rem 1rem;            
+}
+#profile-section a{
+    margin: 0 1rem;
+    padding: 1rem 1rem;
+    display: inline-block;
+}
+.profile-btn:hover {
+    background-color: yellow;
+    color: var(--blue);
+    transform: rotate(0.5turn);
+}
+/* A few media query to set some font sizes at different screen sizes.
+    * This helps automate a bit of responsiveness.
+    * The trick is to use the rem unit for size values, margin and padding.
+    * Because rem is relative to the document font size
+    * when we scale up or down the font size on the document
+    * it will affect all properties using rem units for the values.
+*/
+
+/* I am using the em unit for breakpoints
+    * The calculation is the following
+    * screen size divided by browser base font size
+    * As an example: a breakpoint at 980px
+    * 980px / 16px = 61.25em
+*/
+
+/* 3840px / 16px = 240em */
+@media screen and (max-width: 240em){
+    html {
+        font-size: 60%;
+    }
+    #logo {
+        height: 45px;
+    }
+    #navbar {
+        height: 50px
+    }
+    a.anchor {
+        top: -50px;
+    }
+    #welcome-section {
+        padding-top: 8em ;
+    }
+}
+/* 980px / 16px = 61.25em */
+@media screen and (max-width: 61.25em) {
+    html {
+        font-size: 58%;
+    }
+    q {
+        text-indent: 0;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+    #logo {
+        height: 90px;
+    }
+    #navbar {
+        height: 100px
+    }
+    a.anchor {
+        top: -100px;
+    }
+}
+/* 460px / 16px = 28.75em */
+@media screen and (max-width: 28.75em) {
+    html {
+        font-size: 55%;
+    }
+    #logo {
+        height: 140px;
+    }
+    #navbar {
+        height: 150px
+    }
+    a.anchor {
+        top: -150px;
+    }
 }
