@@ -132,7 +132,6 @@ section {
     text-align: start;
     margin: 1rem;
     padding: 1rem;
-    font-size: 1.8vw;
 }
 #projects-section {
     background-color: var(--grey);
@@ -247,6 +246,9 @@ section {
     a.anchor {
         top: -100px;
     }
+    #welcome-name {
+        font-size: 1.8vw;
+    }
 }
 /* 460px / 16px = 28.75em */
 @media screen and (max-width: 28.75em) {
@@ -261,5 +263,8 @@ section {
     }
     a.anchor {
         top: -150px;
+    }
+    #welcome-name {
+        font-size: 1.8vw;
     }
 }
