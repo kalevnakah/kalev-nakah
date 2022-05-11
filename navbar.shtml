@@ -1,8 +1,0 @@
-<navbar id="navbar">
-  <img id="logo" src="crosswalkcoderlogo.png" alt="Logo - Labrathor" />
-  <ul class="nav-list">
-    <li><a href="#profile">Profile</a></li>
-    <li><a href="#projects">Work</a></li>
-    <li><a href="#welcome">About</a></li>
-  </ul>
-</navbar>
