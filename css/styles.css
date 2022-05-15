@@ -192,10 +192,10 @@ section {
 #profile-title h2 {
   color: whitesmoke;
 }
-#profile-links {
+.links {
   padding: 0 1rem 3rem 1rem;
 }
-#profile-section a {
+.links a {
   margin: 0 1rem;
   padding: 1rem 1rem;
   display: inline-block;
@@ -206,7 +206,9 @@ section {
   transform: rotate(0.5turn);
 }
 #project-display {
-  display: grid;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: top;
   justify-content: center;
   justify-items: center;
@@ -215,18 +217,17 @@ section {
   height: auto;
 }
 .project-img-container {
-  max-width: 500px;
   height: fit-content;
-  margin: 1em;
+  margin: 1em 1em 2em 1em;
   background-color: var(--dark-grey);
-  box-shadow: 10px 10px 10px 0 var(--dark-gree);
+  box-shadow: 10px 10px 10px 0 var(--dark-green);
 }
+
 .project-img-large {
   width: 500px;
-  margin-right: 20px;
 }
 .project-par {
-  min-width: 500px;
+  width: 50%;
   margin-left: 20px;
   padding-left: 20px;
 }
@@ -295,6 +296,9 @@ section {
   .topOfPage {
     font-size: 1.8vw;
   }
+  .project-par {
+    width: 90%;
+  }
 }
 /* 460px / 16px = 28.75em */
 @media screen and (max-width: 28.75em) {
@@ -312,5 +316,8 @@ section {
   }
   .topOfPage {
     font-size: 1.8vw;
+  }
+  .project-img-large {
+    width: 90%;
   }
 }
