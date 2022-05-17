@@ -80,6 +80,54 @@ a.anchor {
 section {
   display: block;
 }
+form {
+  align-self: center;
+  background-color: #3f3f40;
+  padding: 1rem 0.625rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+}
+
+label {
+  display: block;
+  align-items: center;
+  text-align: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+input,
+button,
+textarea {
+  border-radius: 0.5rem;
+  border-style: none;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  background-color: var(--main-white);
+  padding: 1.25rem 1.25rem;
+  margin-bottom: 1.25rem;
+}
+button {
+  padding: 1.25rem 4rem;
+}
+button:hover {
+  background-color: var(--green);
+}
+
+.formGroup {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+  margin: 5px 10px;
+}
+
+.formControl {
+  display: block;
+  width: 100%;
+}
+
 #navbar {
   display: flex;
   position: fixed;
@@ -228,7 +276,7 @@ section {
 }
 .project-par {
   width: 50%;
-  margin-left: 20px;
+  margin: 20px 20px;
   padding-left: 20px;
 }
 
