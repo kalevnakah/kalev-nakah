@@ -112,6 +112,7 @@ textarea {
 }
 button {
   padding: 1.25rem 4rem;
+  font-family: 'Press Start 2P', cursive;
 }
 button:hover {
   background-color: var(--green);
