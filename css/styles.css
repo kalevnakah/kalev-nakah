@@ -48,7 +48,6 @@ h1 {
 h2 {
   font-size: 4rem;
   font-weight: normal;
-  padding: 4rem;
   font-family: 'Sriracha', cursive;
   color: var(--dark-green);
 }
@@ -66,16 +65,24 @@ q {
 a {
   text-decoration: none;
   color: var(--green);
+  line-height: 1;
 }
 a:hover {
   background-color: var(--blue);
   color: var(--dark-green);
+  vertical-align: middle;
 }
 a.anchor {
   display: block;
   position: relative;
   top: -10rem;
   visibility: hidden;
+}
+i {
+  vertical-align: top;
+}
+i:hover {
+  transform: scale(1.5);
 }
 section {
   display: block;
@@ -203,7 +210,7 @@ button:hover {
   grid-gap: 2rem;
   width: 100%;
   max-width: 1280px;
-  margin: 0 auto;
+  margin: 2rem auto;
   justify-items: center;
 }
 .project-tile {
@@ -216,6 +223,7 @@ button:hover {
   background-color: var(--blue);
   transition: background 0.5s ease-out;
 }
+
 #profile-section {
   background-color: var(--blue);
   display: flex;
@@ -252,7 +260,7 @@ button:hover {
 .profile-btn:hover {
   background-color: yellow;
   color: var(--blue);
-  transform: rotate(0.5turn);
+  font-size: 2.6rem;
 }
 #project-display {
   display: flex;
@@ -261,6 +269,7 @@ button:hover {
   align-items: top;
   justify-content: center;
   justify-items: center;
+  margin-bottom: 2rem;
 }
 #project-top {
   height: auto;
@@ -279,10 +288,6 @@ button:hover {
   width: 50%;
   margin: 20px 20px;
   padding-left: 20px;
-}
-
-.project-par h2 {
-  padding: 0;
 }
 
 .project-par p {
