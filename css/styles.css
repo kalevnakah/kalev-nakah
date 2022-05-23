@@ -25,7 +25,7 @@ body {
   line-height: 1.4;
   color: var(--main-white);
   scroll-behavior: smooth;
-  background-color: black;
+  background-color: var(--dark-grey);
 }
 /* Custom properties/variables  */
 :root {
@@ -92,7 +92,7 @@ section {
 }
 form {
   align-self: center;
-  background-color: #3f3f40;
+  background-color: var(--dark-grey);
   padding: 1rem 0.625rem;
   border-radius: 1rem;
   width: 100%;
@@ -203,7 +203,7 @@ button:hover {
   padding: 1rem;
 }
 #projects-section {
-  background-color: var(--grey);
+  background-color: var(--darkgrey);
   text-align: center;
   padding: 1em;
 }
