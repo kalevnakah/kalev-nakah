@@ -173,7 +173,7 @@ button:hover {
 }
 .topOfPage {
   padding: 2em;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-color: var(--dark-grey);
   background-image: linear-gradient(
@@ -375,10 +375,10 @@ button:hover {
     font-size: 55%;
   }
   #logo {
-    height: 140px;
+    height: 100px;
   }
   #navbar {
-    height: 150px;
+    height: 100px;
   }
   a.anchor {
     top: -150px;
