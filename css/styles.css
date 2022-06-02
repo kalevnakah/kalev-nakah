@@ -65,7 +65,7 @@ q {
 a {
   text-decoration: none;
   color: var(--green);
-  line-height: 1;
+  line-height: 1.5;
 }
 a:hover {
   background-color: var(--blue);
